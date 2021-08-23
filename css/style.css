@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: #808080;
 }
@@ -33,6 +41,8 @@ common css
     width: 0;
     height: 3px;
     top: 7px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .bottom_style::after{
@@ -44,6 +54,8 @@ common css
     height: 1px;
     top: 1px;
     z-index: -99;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -53,6 +65,8 @@ common css
     display: inline-block;
     border-radius: 60px;
     text-transform: uppercase;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
     font-weight: 500;
     border: 1px solid #aeaeae;
@@ -89,6 +103,8 @@ header::after{
     color: #fff;
     font-size: 18px;
     text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .navbar-light .navbar-nav .nav-link:hover{
@@ -98,6 +114,8 @@ header::after{
     background: #deae36;
     padding: 12px 30px;
     border-radius: 50px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     display: inline-block;
     margin: auto;
@@ -111,8 +129,11 @@ header::after{
 }
 .nav-border{
     background: white;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
-    box-shadow: 10px 0px 10px gray;
+    -webkit-box-shadow: 10px 0px 10px gray;
+            box-shadow: 10px 0px 10px gray;
 }
 .nav-border .navbar-nav .nav-link{
     color: #deae36;
@@ -142,6 +163,8 @@ banner slider area start
     background: #deae36;
     padding: 13px 30px;
     border-radius: 50px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     color: white;
 }
@@ -160,6 +183,7 @@ about area start
     bottom: 0;
     background: #000;
     opacity: 0.6;
+    display: -ms-grid;
     display: grid;
     place-items: center;
 }
@@ -168,6 +192,7 @@ about area start
     width: 60px;
     height: 60px;
     border-radius: 50px;
+    display: -ms-grid;
     display: grid;
     place-items: center; 
     z-index: 99999999;
@@ -179,6 +204,8 @@ about area start
 .about .main_content .sec_title .my_btn{
     border: 2px solid #deae36;
     color: #deae36;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .about .main_content .sec_title .my_btn:hover{
@@ -207,7 +234,9 @@ wwd area start
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     background: #808080;
     width: 50px;
     height: 3px;
@@ -239,6 +268,8 @@ work area starts
     padding: 10px;
     position: relative;
     cursor: pointer;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
     font-weight: 600;
 }
@@ -250,7 +281,9 @@ work area starts
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     height: 15px;
     width: 2px;
     background: #444444;
@@ -269,7 +302,11 @@ work area starts
     right: 0;
     background-color:#deae36;
     opacity: 0.9;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .each_when_hover span{
@@ -277,12 +314,16 @@ work area starts
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     font-weight: 300;
     font-size: 80px;
 }
 .each_items:hover .each_when_hover{
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
 }
 .gallery .padding-2{
     padding: 2px;
@@ -300,11 +341,15 @@ tab area starts
 .tab_lists .our_nav_list{
     padding: 0;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
 }
 .tab_lists .our_nav_list .nav-item {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     display: block;
 
 }
@@ -313,6 +358,8 @@ tab area starts
     color: #444444 !important;
     font-size: 18px !important;
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     border-bottom: 3px solid transparent;
 }
@@ -334,6 +381,8 @@ tab area starts
     font-size: 16px;
 }
 .tab-pane.active{
+    -webkit-transition: .7s;
+    -o-transition: .7s;
     transition: .7s;
 }
 
@@ -376,7 +425,9 @@ discover luxury area start
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+        -ms-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
 }
 /* =================
 team members area start
@@ -407,16 +458,22 @@ team members area start
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, .8);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 .team_info{
     position: absolute;
     top: 40%;
     padding: 0 10px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 .team_content:hover .team_info{
-    transform: translateY(-40%);
+    -webkit-transform: translateY(-40%);
+        -ms-transform: translateY(-40%);
+            transform: translateY(-40%);
 }
 .team_info h4, .team_info h6, .team_info p{
     color: white !important;
@@ -426,12 +483,16 @@ team members area start
     left: 0;
     right: 0;
     bottom: -70px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 .team_content:hover .team_social_icons{
     bottom: 0;
 }
 .team_social_icons ul li{
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .team_social_icons ul li a{
@@ -440,7 +501,9 @@ team members area start
     font-size: 18px;
 }
 .team_social_icons ul li:hover a{
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
 }
 .team_social_icons ul li a i{
     color: white !important;
@@ -455,6 +518,7 @@ contact area starts
 .contact_form {
     background: #808080;
     height: 600px;
+    display: -ms-grid;
     display: grid;
     place-items: center;
 }
@@ -468,12 +532,29 @@ input {
     padding-left: 0 !important;
     color: white !important;
   }
+  input::-webkit-input-placeholder {
+    color: white !important;
+    font-weight: 500;
+  }
+  input::-moz-placeholder {
+    color: white !important;
+    font-weight: 500;
+  }
+  input:-ms-input-placeholder {
+    color: white !important;
+    font-weight: 500;
+  }
+  input::-ms-input-placeholder {
+    color: white !important;
+    font-weight: 500;
+  }
   input::placeholder {
     color: white !important;
     font-weight: 500;
   }
   input:focus {
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
   }
   input[type="submit"] {
     color: #ffffff;
@@ -483,6 +564,8 @@ input {
     border: 2px solid #deae36 !important;
     padding: 10px 50px !important;
     background: #deae36 !important;
+    -webkit-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
   }
   input[type="submit"]:hover {
@@ -497,12 +580,29 @@ input {
     padding-left: 0 !important;
     color: white !important;
 }
+  textarea::-webkit-input-placeholder {
+    color: white !important;
+    font-weight: 500;
+  }
+  textarea::-moz-placeholder {
+    color: white !important;
+    font-weight: 500;
+  }
+  textarea:-ms-input-placeholder {
+    color: white !important;
+    font-weight: 500;
+  }
+  textarea::-ms-input-placeholder {
+    color: white !important;
+    font-weight: 500;
+  }
   textarea::placeholder {
     color: white !important;
     font-weight: 500;
   }
   textarea:focus {
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
   }
 /* =================
 our brands area start
@@ -543,14 +643,20 @@ footer area start
     width: 40%;
 }
 .widget_socical ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .widget_socical ul li a{
     color: #6b6b6b;
     display: block;
     padding: 10px;
     font-size: 18px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .widget_socical ul li a:hover{
