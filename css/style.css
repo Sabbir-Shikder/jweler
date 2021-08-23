@@ -16,14 +16,6 @@
 .wrapper{ /**wrapper css**/
     overflow: hidden;
 }
-.nicescroll-cursors{
-    height: 150px !important;
-    background-color: #deae36 !important;
-    border: 0 !important;
-    border-radius: 10px !important;
-    height: 300px !important;
-    background-clip:inherit !important;
-}
 /* =============
 common css
 ============= */
