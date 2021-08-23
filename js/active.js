@@ -30,11 +30,6 @@ $('.owl-carousel').owlCarousel({
       }
 })
 
-// nice scroll 
-$("body").niceScroll({
-    cursorwidth: "10px",
-});
-  
 
 
 // go top button 
