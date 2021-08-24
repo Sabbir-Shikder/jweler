@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
+
 
 *{
     margin: 0;
@@ -73,7 +68,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    min-height: 100vh;
+    min-height: 950px;
 }
 header::after{
     content: '';
